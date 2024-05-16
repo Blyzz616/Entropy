@@ -49,5 +49,6 @@ AUTHOR
 
 Output for "Hello World!"
 
-![image](https://github.com/Blyzz616/Entropy/assets/19424317/c32e3eb5-0cc6-444f-a2c9-07b26bbbd037)
+![image](https://github.com/Blyzz616/Entropy/assets/19424317/68b46152-e6f9-4a73-a3ba-bb4b4cd33e11)
+
 
