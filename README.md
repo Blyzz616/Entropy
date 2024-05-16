@@ -2,6 +2,7 @@
 
 This script will take a string and display it's entropy. It will then dispaly a graph showing all the characters used.
 
+```
 NAME
        entropy - Display entropy of a particular string with a bar chart displaying character usage.
 
@@ -44,9 +45,9 @@ DESCRIPTION
 
 AUTHOR
        Written by Jim Sher.
-
+```
 
 Output for "Hello World!"
-```
 
-```
+![image](https://github.com/Blyzz616/Entropy/assets/19424317/c32e3eb5-0cc6-444f-a2c9-07b26bbbd037)
+
