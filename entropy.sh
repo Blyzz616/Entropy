@@ -148,8 +148,7 @@ get_hashes() {
 }
 
 VERSION(){
-    echo -e "
-entropy 0.1
+    echo -e "entropy 0.1
 Copyright (C) 2024 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
 This is free software: you are free to change and redistribute it.
@@ -213,10 +212,15 @@ exit 0
 echo -e ""
 
 # Set input to remaining command-line arguments
-input="$@"
+#input="$@"
 
-if [[ -z $input ]];then
-    DESC
+#if [[ -z $input ]];then
+#    DESC
+#fi
+
+# Set input to remaining command-line arguments or standard input
+if [[ $# -eq 0 ]]; then
+    input=$(cat)
 fi
 
 # Check command-line options
@@ -230,9 +234,9 @@ while getopts ":lnswipadh" opt; do
         p|--period)  input="${input//./}";;
         a|--ascend)  a_option=true;;
         d|--descend) d_option=true;;
-        --version)  VERSION;;
+        v|--version)  VERSION;;
         h|--help)  DESC;;
-        \?) echo "Invalid option: -$OPTARG" >$2; exit 1;;
+        \?)  VERSION;;
     esac
 done
 
